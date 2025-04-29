@@ -1884,8 +1884,8 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 		domContainers[0].width = w * pRatio * sRatio;			
 		domContainers[0].height = h * pRatio * sRatio;
 		domContainers.forEach(function(container) {				
-			container.style.width = w * sRatio + 'px';				
-			container.style.height = h * sRatio + 'px';			
+			container.style.width = w * pRatio * sRatio + 'px';				
+			container.style.height = h * pRatio * sRatio + 'px';			
 		});
 		stage.scaleX = pRatio*sRatio;			
 		stage.scaleY = pRatio*sRatio;
